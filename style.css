@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@200..700;1,6..12,200..1000&display=swap');
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: all 0.2 linear;
+}
+
+html {
+
+    overflow-x: hidden;
+    height: 500vh;
+}
+
+:root {
+    --red: #E50914;
+    --black: #000000;
+    --light-color: #181818;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    --display-flex: flex;
+    --min-gap: 5px;
+    --with_100: 100%;
+    --hight_100: 100%;
+    --background-size: cover !important;
+    --background-position: center !important;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    background: var(--black);
+    box-shadow: var(--box-shadow);
+}
+
+header .logo {
+    color: white;
+    font-size: 2.5rem;
+}
+
+header .logo i {
+    color: var(--red);
+    font-size: 3rem;
+}
+
+header a {
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
+
+header .navbar a {
+    font-size: 25px;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+}
+
+header .navbar {
+    display: var(--display-flex);
+    gap: var(--min-gap);
+}
+
+header .navbar a:hover {
+    color: white;
+    background-color: var(--red);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: white;
+    background-color: var(--red);
+}
+
+header .icons i,
+header .icons a {
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 50%;
+    background: var(--red);
+
+}
+
+header .icons i:hover,
+header .icons a:hover {
+    color: var(--red);
+    background: #fff;
+    transform: rotate(370deg);
+}
+
+header .icons #menu-bars {
+    display: none;
+}
+
+header .icons a {
+    position: relative;
+    top: 4px;
+}
+
+.fa-heart:before {
+    content: "\f004";
+    position: relative;
+    top: -4px;
+    left: -1px;
+    align-items: center;
+}
+
+.home {
+    padding: 0;
+}
+
+.home .box {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content: flex-end;
+    padding: 2rem 9%;
+    width: 100%;
+    display: flex;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: '';
+    display: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next,
+img {
+    width: 30px;
+}
+
+.content {
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.InContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 500px;
+    font-size: 25px;
+}
+
+/* .content p {
+    width: 500px;
+} */
+.btn {
+    display: inline;
+    background-color: #E50914;
+    color: #fff;
+    padding: 10px;
+}
+
+.btn:hover {
+    transition: all 0.2s;
+    filter: brightness(120%);
+}
+
+.content_2 {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#narutoContent {
+    margin-top: 100px;
+    margin-left: 30px;
+    gap: 10px;
+}
+
+.animeCard {
+    width: 224px;
+    height: 380px;
+    background-size: cover !important;
+    background-position: center !important; 
+
+}
+.card {
+    border: none;
+    text-align: left;
+    width: 224px;
+    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card:hover {
+    transition: 0.2s all;
+
+    .card-text {
+        display: none;
+    }
+
+    .card_second_Paige {
+        opacity: 1;
+    }
+}
+
+.card_second_Paige {
+    color: white;
+    display: block;
+    z-index: 999;
+    position: absolute;
+    left: 0px;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background: rgba(32, 32, 32, 0.5);
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 0;
+}
+
+.solo_LevelingTitle {
+    max-width: 300px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .content_2 {
+        font-size: 15px;
+        width: 400px;
+    }
+
+    .InContent {
+        color: white;
+        font-size: 15px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 770px) {
+    header .icons #menu-bars {
+        display: inline-block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--black);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: var(--red);
+        width: 100%;
+
+    }
+
+    .content_2 {
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .InContent {
+        color: white;
+        font-size: 15px;
+        width: 300px;
+    }
+
+    .box {}
+}
+
+@media(max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+
+    .box {
+        width: 100% !important;
+    }
+}
